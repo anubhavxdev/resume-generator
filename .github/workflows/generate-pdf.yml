@@ -18,13 +18,13 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Resume CLI and Professional Theme Locally
+      - name: Install Resume CLI and "Professional" Theme
         run: |
           npm install resume-cli
-          npm install jsonresume-theme-pro
+          npm install jsonresume-theme-even
 
-      - name: Generate index.html using Professional theme
-        run: RESUME_THEME_PATH=./node_modules/jsonresume-theme-pro npx resume export index.html --theme pro
+      - name: Generate index.html using "Professional" theme
+        run: RESUME_THEME_PATH=./node_modules/jsonresume-theme-even npx resume export index.html --theme even
 
       - name: Convert HTML to PDF
         uses: fifsky/html-to-pdf-action@master

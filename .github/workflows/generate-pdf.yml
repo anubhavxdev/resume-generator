@@ -21,11 +21,7 @@ jobs:
       - name: Install Resume CLI and Theme
         run: |
           npm install -g resume-cli
-          resume init
           npm install -g jsonresume-theme-stackoverflow
-
-      - name: Copy resume.json
-        run: cp resume.json resume.json
 
       - name: Export Resume as HTML
         run: resume export index.html --theme stackoverflow

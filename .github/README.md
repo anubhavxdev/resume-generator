@@ -1,24 +1,56 @@
-<h1 align="center">Jyotirmoy Bandyopadhayaya - CV</h1>
-<p align="center">
-<i>This repo contains the source for my personal CV</i>
-<br />
+# 🧾 Resume Generator (YAML-Based)
 
-> **Motivation**<br>
-> Why spend 30 minutes writing your CV, when you could spend 30 hours automating it?
+This project is a clean, professional resume/CV generator powered by YAML + HTML + GitHub Actions. It automatically generates a PDF resume and an HTML view from a single `resume.yaml` file.
+
+![Generated PDF Resume](https://github.com/anubhavxdev/resume-generator/blob/main/docs/cv.pdf)
 
 ---
 
-## Usage
+## ✨ Features
 
-Upon creating a tag (by triggering the [Tag Workflow](/.github/workflows/tag.yml)), a new Release will be drafted with your compiled CV PDF attatched
-
-1. Fork the repo
-2. Update resume.yaml with your own content
-3. Trigger the GitHub Action to compile the PDF
-
----
-
-### Editing
-Modify data by editing [`resume.yaml`](/resume.yaml)<br>
+- 📄 Edit once → export as **PDF** and **HTML**
+- ⚙️ Built using **Makefile** and **GitHub Actions**
+- 📦 Powered by clean HTML, CSS, and LaTeX styling
+- 🚀 Auto-build resume on every commit
 
 ---
+
+## 🧱 Folder Structure
+
+```bash
+resume-generator/
+├── resume.yaml          # Your editable resume content
+├── docs/
+│   ├── cv.pdf           # Auto-generated PDF resume
+│   └── index.html       # Auto-generated HTML resume
+├── .github/
+│   └── workflows/
+│       └── compile.yml  # GitHub Actions PDF builder
+├── Makefile             # Local build tool
+└── README.md
+```
+## ✍️ Editing Your Resume
+Edit your main content inside the resume.yaml file. You can change:
+
+Name, contact info
+
+Work experience
+
+Education
+
+Skills, projects, etc.
+
+Once you push to main, GitHub will:
+
+Compile the YAML into HTML
+
+Convert HTML to PDF
+
+Save everything in the docs/ folder
+
+## 📄 Output Example
+✅ Live HTML resume (index.html)
+
+✅ Generated PDF resume (cv.pdf)
+
+## 

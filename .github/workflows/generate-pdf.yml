@@ -1,4 +1,4 @@
-name: Generate PDF Resume
+name: Generate and Upload PDF Resume
 
 on:
   push:
@@ -6,11 +6,11 @@ on:
       - main
 
 jobs:
-  build:
+  generate-resume:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -18,15 +18,25 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install JSON Resume CLI and Theme
+      - name: Install Resume CLI and Theme
         run: |
           npm install -g resume-cli
+          resume init
           npm install -g jsonresume-theme-stackoverflow
 
-      - name: Generate PDF Resume
-        run: resume export resume.pdf --theme stackoverflow
+      - name: Copy resume.json
+        run: cp resume.json resume.json
 
-      - name: Upload resume.pdf as artifact
+      - name: Export Resume as HTML
+        run: resume export index.html --theme stackoverflow
+
+      - name: Convert HTML to PDF
+        uses: fifsky/html-to-pdf-action@master
+        with:
+          htmlFile: index.html
+          outputFile: resume.pdf
+
+      - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf

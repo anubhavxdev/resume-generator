@@ -10,7 +10,9 @@ basics:
     - network: LinkedIn
       url: https://www.linkedin.com/in/anubhavxdev
     - network: Portfolio
-      url: https://anubhav12302387.github.io/My_Portfolio/
+      url: https://anubhavjaiswal1803.github.io
+    - network: GitHub
+      url:
 
 summary: >
   Operation Lead at AWS Cloud Club at Lovely Professional University. Passionate about cloud computing, AWS, and backend development. With a strong foundation in information technology, I lead tech initiatives and mentor peers in building real-world solutions. I actively contribute to open-source and developer communities.

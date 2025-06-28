@@ -24,7 +24,7 @@ jobs:
           npm install jsonresume-theme-stackoverflow
 
       - name: Generate index.html
-        run: npx resume export index.html --theme stackoverflow --theme-path node_modules/jsonresume-theme-stackoverflow
+        run: RESUME_THEME_PATH=./node_modules/jsonresume-theme-stackoverflow npx resume export index.html --theme stackoverflow
 
       - name: Convert HTML to PDF
         uses: fifsky/html-to-pdf-action@master

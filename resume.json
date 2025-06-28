@@ -1,0 +1,127 @@
+{
+  "basics": {
+    "name": "Anubhav Jaiswal",
+    "label": "Software Developer",
+    "email": "anubhavjaiswal1803@gmail.com",
+    "location": {
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    "url": "https://anubhav12302387.github.io/My_Portfolio/",
+    "summary": "Operation Lead at AWS Cloud Club at Lovely Professional University with a strong focus on Amazon Web Services and cloud computing. I bring a blend of theoretical knowledge and hands-on skills to foster innovation and learning in the cloud domain.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "anubhavxdev",
+        "url": "https://www.linkedin.com/in/anubhavxdev"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "AWS Cloud Club at Lovely Professional University",
+      "position": "Technical Lead",
+      "startDate": "2025-06",
+      "summary": "Leading technical efforts and mentoring team members for cloud-based initiatives.",
+      "location": "Jalandhar, Punjab, India"
+    },
+    {
+      "company": "AWS Cloud Club at Lovely Professional University",
+      "position": "Operation Lead",
+      "startDate": "2024-12",
+      "endDate": "2025-06",
+      "location": "Jalandhar, Punjab, India"
+    },
+    {
+      "company": "AWS Cloud Club at Lovely Professional University",
+      "position": "Core Team Member",
+      "startDate": "2024-08",
+      "endDate": "2024-12",
+      "location": "Phagwara, Punjab, India"
+    },
+    {
+      "company": "FounDev Studio",
+      "position": "Founding SDE",
+      "startDate": "2025-04",
+      "summary": "Building and managing core product features for clients and internal tools."
+    },
+    {
+      "company": "Bluestock™",
+      "position": "Software Engineer",
+      "startDate": "2025-01",
+      "endDate": "2025-05",
+      "location": "Pune, Maharashtra, India"
+    },
+    {
+      "company": "Winter Of Blockchain",
+      "position": "Marketing Team Member",
+      "startDate": "2024-08",
+      "endDate": "2024-12"
+    },
+    {
+      "company": "GirlScript Summer of Code",
+      "position": "Open Source Contributor",
+      "startDate": "2024-05",
+      "endDate": "2024-08"
+    },
+    {
+      "company": "DevTown",
+      "position": "Campus Ambassador",
+      "startDate": "2024-04",
+      "endDate": "2024-06"
+    },
+    {
+      "company": "Internshala",
+      "position": "Campus Ambassador",
+      "startDate": "2024-02",
+      "endDate": "2024-03"
+    },
+    {
+      "company": "CodSoft",
+      "position": "Project Intern",
+      "startDate": "2024-02",
+      "endDate": "2024-03"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lovely Professional University",
+      "area": "Information Technology",
+      "studyType": "Bachelor of Technology - BTech",
+      "startDate": "2023",
+      "endDate": "2027"
+    },
+    {
+      "institution": "St. Augustine's Day School",
+      "area": "Science",
+      "studyType": "ISC",
+      "startDate": "2021-04",
+      "endDate": "2023-04"
+    },
+    {
+      "institution": "The Park English School",
+      "area": "Science",
+      "studyType": "ICSE",
+      "startDate": "2013-04",
+      "endDate": "2021-04"
+    }
+  ],
+  "certificates": [
+    { "name": "Packet Switching Networks and Algorithms" },
+    { "name": "Google Developer Groups" },
+    { "name": "Fundamentals of Network Communication" },
+    { "name": "Hack The Mountain 5.o" },
+    { "name": "The Bits and Bytes of Computer Networking" }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "keywords": ["TypeScript", "REST APIs", "Amazon Web Services (AWS)"]
+    }
+  ],
+  "projects": [],
+  "languages": [],
+  "awards": [],
+  "volunteer": []
+}

@@ -8,30 +8,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Generate and Upload PDF
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Install JSON Resume CLI
-        run: npm install -g resume-cli
-
-      - name: Install Theme
+      - name: Install JSON Resume CLI and Theme
         run: |
-          THEME=$(jq -r '.theme' .resume/theme.json)
-          npm install -g jsonresume-theme-$THEME
+          npm install -g resume-cli
+          npm install -g jsonresume-theme-stackoverflow
 
-      - name: Generate PDF
-        run: |
-          resume export resume.pdf --theme $(jq -r '.theme' .resume/theme.json)
+      - name: Generate PDF Resume
+        run: resume export resume.pdf --theme stackoverflow
 
-      - name: Upload PDF as artifact
+      - name: Upload resume.pdf as artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf
